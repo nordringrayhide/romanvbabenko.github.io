@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/posts/continuous-integration-server-of-schrodinger/</loc>
+    <lastmod>2017-07-30T07:30:44+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/dropbox-as-remote-git-hosting/</loc>
+    <lastmod>2016-04-30T07:47:14+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/how-i-lost-my-instagram-hack-and-mass-following-backup-be-with-you/</loc>
+    <lastmod>2016-04-11T09:13:10+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/unpopular-coding-practices-code-that-easy-to-delete/</loc>
+    <lastmod>2016-02-23T08:08:23+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/kainstagram-episode-3-kai-console/</loc>
+    <lastmod>2015-08-24T20:10:26+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/kainstagram-episode-2-dashboard/</loc>
+    <lastmod>2015-07-23T20:37:25+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/continuous-delivery-kainstagram-v2.3/</loc>
+    <lastmod>2015-07-16T19:04:13+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/geeky-gears-mplayer-and-english-lessons/</loc>
+    <lastmod>2014-10-30T20:03:04+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2017-07-30T07:30:44+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/</loc>
+    <lastmod>2017-07-30T07:30:44+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

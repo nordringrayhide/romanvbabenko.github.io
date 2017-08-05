@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Attic-o-Techie</title>
+    <link>http://example.org/</link>
+    <description>Recent content in Home on Attic-o-Techie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Jul 2017 07:30:44 +0200</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Continuous Integration. Server Of Schrodinger</title>
+      <link>http://example.org/posts/continuous-integration-server-of-schrodinger/</link>
+      <pubDate>Sun, 30 Jul 2017 07:30:44 +0200</pubDate>
+      
+      <guid>http://example.org/posts/continuous-integration-server-of-schrodinger/</guid>
+      <description>Issue Why should we use provision tools and practices, instead building servers by hand.
+Why believe “we built the server N years ago and it works fine” is dangerous.
+Synopsis Let’s imagine we have a provisioning script which installs several roles.
+Role A and Role B has common dependency as Lib C
+Role A installs the dependency and satisfies need of Role B
+Production server provisioned some time ago.</description>
+    </item>
+    
+    <item>
+      <title>Dropbox as Remote Git Hosting</title>
+      <link>http://example.org/posts/dropbox-as-remote-git-hosting/</link>
+      <pubDate>Sat, 30 Apr 2016 07:47:14 +0200</pubDate>
+      
+      <guid>http://example.org/posts/dropbox-as-remote-git-hosting/</guid>
+      <description>You really do not have to use a lorry to move a sack of cement. Wheelbarrow fits better for this.
+Let me show you my git storage evolution:
+ Github (private reps 12$ per month) Gitlab - VPS(Linode, 2GB, 20$ per month) Gogs - VPS(Linode, 1GB, 10$ per month) - love it so much, gonna do another post about it finally, git-remote-dropbox - free  As you can see I sacrificed features I did not need.</description>
+    </item>
+    
+    <item>
+      <title>How I Lost My Instagram Hack And Mass Following Backup Be With You</title>
+      <link>http://example.org/posts/how-i-lost-my-instagram-hack-and-mass-following-backup-be-with-you/</link>
+      <pubDate>Mon, 11 Apr 2016 09:13:10 +0200</pubDate>
+      
+      <guid>http://example.org/posts/how-i-lost-my-instagram-hack-and-mass-following-backup-be-with-you/</guid>
+      <description>I have been a user of Instagram for years, but the last Sunday(Mar 27, 2016) my private account was violently hacked. Attackers changed my personal info and started the following storm. Despite I was controlling the account, it sent by itself more than 600 following requests to the same probably infected private accounts in several hours.
+Changing password and revocation of all third party apps did not help. The process provided.</description>
+    </item>
+    
+    <item>
+      <title>Unpopular Coding Practices. Code That Easy To Delete</title>
+      <link>http://example.org/posts/unpopular-coding-practices-code-that-easy-to-delete/</link>
+      <pubDate>Tue, 23 Feb 2016 08:08:23 +0200</pubDate>
+      
+      <guid>http://example.org/posts/unpopular-coding-practices-code-that-easy-to-delete/</guid>
+      <description>It’s not an article at all. Just some emotional intro for Write code that is easy to delete, not easy to extend.
+It’s pleasure to meet people who follow the same things like you and you don’t have to rewrite pieces of experience over and over again. I don’t recommend to read the article to people who are a “copy-a-paste” hater or a dogma evangelist. It’s for the men flexible enough to get that all decline questions start with “it depends on” and don’t follow development practices blindly as the only rules.</description>
+    </item>
+    
+    <item>
+      <title>KAInstagram, Episode #3 | KAI-Console</title>
+      <link>http://example.org/posts/kainstagram-episode-3-kai-console/</link>
+      <pubDate>Mon, 24 Aug 2015 20:10:26 +0200</pubDate>
+      
+      <guid>http://example.org/posts/kainstagram-episode-3-kai-console/</guid>
+      <description>See also: KAInstagram, Episode #2 | Dashboard
+ It’s just for fun, but an ability to isolate a problem is important. There is no need to build a wider UI just for the only thing: to enjoy the product what you’ve done :-) On the other hand, small projects give you an ability to try a technology without useless dependencies. So here we go!
+ Briefly, KAInstagram has got OAuth2 authorization.</description>
+    </item>
+    
+    <item>
+      <title>KAInstagram, Episode #2 | Dashboard</title>
+      <link>http://example.org/posts/kainstagram-episode-2-dashboard/</link>
+      <pubDate>Thu, 23 Jul 2015 20:37:25 +0200</pubDate>
+      
+      <guid>http://example.org/posts/kainstagram-episode-2-dashboard/</guid>
+      <description>According to Wikipedia a dashboard is:
+  an easy to read, often single page, real-time user interface, showing a graphical presentation of the current status (snapshot) and historical trends of an organization’s or computer appliances key performance indicators to enable instantaneous and informed decisions to be made at a glance So according to the definition a dashboard helps to effectively examine the situation and to make decision instead of exhausting log grepping and useless team members’ blaming one another who caused the drawback.</description>
+    </item>
+    
+    <item>
+      <title>Continuous Delivery - KAInstagram v2.3</title>
+      <link>http://example.org/posts/continuous-delivery-kainstagram-v2.3/</link>
+      <pubDate>Thu, 16 Jul 2015 19:04:13 +0200</pubDate>
+      
+      <guid>http://example.org/posts/continuous-delivery-kainstagram-v2.3/</guid>
+      <description>## What is that?
+A self-promotion video featuring an Instagram App project.
+Project details: Time spent: 10 days /3-4 hours a day/.
+Project includes three parts: API, IOS App, and Virtual Host Machine
+KAInstagram API Ruby &amp;amp; Rails  Testing Framework: rspec_api_documentation App Server: Puma Deploy: capistrano KAInstagram-iOS  Objective-C  OS: iOS 8.4 client app tested by Calabash Code Bundler: CocoaPods Testing Framework: Calabash/Cucumber  ### KAInstagram-VM</description>
+    </item>
+    
+    <item>
+      <title>Geeky Gears Mplayer And English Lessons</title>
+      <link>http://example.org/posts/geeky-gears-mplayer-and-english-lessons/</link>
+      <pubDate>Thu, 30 Oct 2014 20:03:04 +0200</pubDate>
+      
+      <guid>http://example.org/posts/geeky-gears-mplayer-and-english-lessons/</guid>
+      <description>There are a lot of good and useful audio players for OSX. I prefer to use VLC media player. Unfortunately, it is useless for intensive usage. For example, you have English audio listening exercise and you have to rewind it step by step for better phrases recognition. In this case, VLC behaves absolutely unpredictable: jumps from one place to another, freezes or crashes. It’s really boring, especially if you’re working on the last part of the audio and you’re exhausted.</description>
+    </item>
+    
+  </channel>
+</rss>
