@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Continuous Integration. Server Of Schrodinger | Attic-o-Techie</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76605011-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-76605011-1');
+</script>
+
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Continuous Integration. Server Of Schrodinger</span></h1>
+
+<h2 class="date">2017/07/30</h2>
+</div>
+
+<main>
+
+
+<h2 id="issue">Issue</h2>
+
+<p>Why should we use any provision tools and practices, instead of building servers manually?</p>
+
+<p>Why the belief that “we built the server N years ago and it works fine” is dangerous.</p>
+
+<h2 id="synopsis">Synopsis</h2>
+
+<p>Let’s imagine we have a provisioning script which installs several roles.</p>
+
+<p>Role A and Role B have a common dependency as Lib C</p>
+
+<p>Role A installs the dependency and satisfies the requirement of Role B</p>
+
+<p>Production server was provisioned long time ago.</p>
+
+<p>Role A has been refactored and does not install Lib C any more.</p>
+
+<p>Role B is broken</p>
+
+<p>The server is still working and being provisioned with no issues.</p>
+
+<p>It happens because Lib B is already installed on it by Role A.</p>
+
+<p>Production server seems to be ok, but the provisioning infrastructure is broken.</p>
+
+<p>The real world example is: role &ldquo;git&rdquo; is being installed from sources and requires g++ compiler lib.</p>
+
+<p>At the same time rails app, therubytracer gem requires it as well. Role git is replaced with a binary package installation to reduce the time of the integration process. So now rails app role is broken and therubytracer gem cannot be installed.</p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>If we do not continuously integrate our infrastructure, but just only provision production servers, it would happen that the server is broken and cannot be restored from scratch with provisioning script. The reason is that the legacy state is not being provided by the modified and unintegrated script any more.</p>
+
+<p>Integration, it means, regular testing of the script on the blank environment from scratch.</p>
+
+<p>So the infrastructure is alive and dead at the same time.</p>
+
+</main>
+
+  <footer>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-7841501724976419"
+     data-ad-slot="6482387143"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  
+  <hr/>
+  &copy; <a href="https://romanvbabenko.github.io">Roman V. Babenko</a> 2017 | <a href="https://github.com/romanvbabenko">Github</a> | <a href="https://twitter.com/romanvbabenko">Twitter</a> | <a href="https://ua.linkedin.com/in/romanvbabenko">LinkedIn</a>
+  
+  </footer>
+  </body>
+</html>
+

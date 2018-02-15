@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Geeky Gears Mplayer And English Lessons | Attic-o-Techie</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76605011-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-76605011-1');
+</script>
+
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Geeky Gears Mplayer And English Lessons</span></h1>
+
+<h2 class="date">2014/10/30</h2>
+</div>
+
+<main>
+<p>There are a lot of good and useful audio players for OSX. I prefer to use VLC media player. Unfortunately, it is useless for intensive usage. For example, you have English audio listening exercise and you have to rewind it step by step for better phrases recognition. In this case, VLC behaves absolutely unpredictable: jumps from one place to another, freezes or crashes. It’s really boring, especially if you’re working on the last part of the audio and you’re exhausted.</p>
+
+<p>Let’s go down to the underground, to the console. So what do we have? Yep, Merry Old MPlayer.</p>
+
+<p>All that you need to do is configure your shortcuts preferences in ~/.mplayer/input.conf file. You can see my own key mapping below. iTerm2, Homebrew, mplayer(installed via brew command) are recommended. Let’s do it.</p>
+
+<p>~/.mplayer/input.conf</p>
+
+<pre><code># key-bindings:
+left seek -4
+right seek 2
+
+up speed_incr 0.01
+down speed_incr -0.01
+
+- volume -1
+= volume 1
+</code></pre>
+
+<p>Note: Mplayer is presented for all popular operating systems, you just need to know where to configure mplayer’s home directory is placed.</p>
+
+<p>So, now you can type in terminal mplayer and manage the volume of the file via -/+ keyboard buttons, manage audio speed via up/down arrow keys and move forward and backward through the left and right keyboard arrows. All incremental and decremental parameters, like volume, seek, speed you can set as you wish. That’s all.</p>
+
+<p>Unfortunately, I couldn’t embed original gist from the Github. You can take it <a href="https://gist.github.com/5b5b7715d6ab1e7aa53b.git">here</a>.</p>
+
+</main>
+
+  <footer>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-7841501724976419"
+     data-ad-slot="6482387143"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  
+  <hr/>
+  &copy; <a href="https://romanvbabenko.github.io">Roman V. Babenko</a> 2017 | <a href="https://github.com/romanvbabenko">Github</a> | <a href="https://twitter.com/romanvbabenko">Twitter</a> | <a href="https://ua.linkedin.com/in/romanvbabenko">LinkedIn</a>
+  
+  </footer>
+  </body>
+</html>
+

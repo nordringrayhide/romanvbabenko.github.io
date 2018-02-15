@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KAInstagram, Episode #2 | Dashboard | Attic-o-Techie</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76605011-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-76605011-1');
+</script>
+
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">KAInstagram, Episode #2 | Dashboard</span></h1>
+
+<h2 class="date">2015/07/23</h2>
+</div>
+
+<main>
+<p>According to Wikipedia a dashboard is:</p>
+
+<iframe width="700" height="394" src="https://www.youtube.com/embed/EltBIQXZcNI" frameborder="0" allowfullscreen></iframe>
+
+<blockquote>
+<p>an easy to read, often single page, real-time user interface, showing a graphical presentation of the current status (snapshot) and historical trends of an organization’s or computer appliances key performance indicators to enable instantaneous and informed decisions to be made at a glance So according to the definition a dashboard helps to effectively examine the situation and to make decision instead of exhausting log grepping and useless team members’ blaming one another who caused the drawback.</p>
+</blockquote>
+
+<p>There are a lot of dashboards in our life: a dash of a car, board of exchange, even a watch on your hand. The main purposes of a dashboard are the reflection of the current situation and to be an instrument which helps you to make a decision.</p>
+
+<p>It’s naturally that software has a complex structure. Monitoring of each part is a vital need for the majority of projects. Almost every software part has its own monitoring subsystems and instruments. For instance, Monit as an internal instrument for monitoring *nix operation systems, ping response as an indicator of system accessibility, a range of HTTP response codes as a reflector of website health. Often application supplies API for getting stats by itself and it’s a kind of monitoring data as well. The main goal of the dashboard is to converge a whole variety of monitoring APIs, formats, files etc. and to visualize them as clear as possible.</p>
+
+<p>The simplest interface of portraying information which has been invented by humanity is a text. But plenty of text on a screen makes an observer tired very fast. A good approach, in this case, is using colour and graphic instruments. For example, if you have several server nodes and want to display their health, it would be a good solution to represent them as sectors of the circle. Colour determination is very powerful leverage for visualisation sharpening, so every sector can get a green or red colour if they have good or bad health accordingly. The same logic could be applied to textual information for intensification of perception: red background if something is bad, and green one in opposite situation. As a result, just the very first glance, could allow you to estimate a level of threat: are you on red alert or cool as ice.</p>
+
+<p>There are a lot of good industrial solutions for dashboarding: Nagios, Zabbix, etc. The good characteristic of a software architect, as well as any resolver, is not doing a solution even a bigger problem, then the problem which it resolves. Additionally, if you need to do something fast, do it as you know or the same way as you did it before. I’m a big fan of Ruby and if I can, I prefer staying with Ruby based solutions. So, according to all things that were mentioned, I have built a small dashboard for my KAInstagram project. It’s based on the well-known Ruby-based application which is called Dashing <a href="http://dashing.io/">http://dashing.io/</a>. I have a bit extended it by HighchartsJS Pie Widget and modified behaviour of widgets according to principles mentioned above.</p>
+
+<p>There’re three widgets:</p>
+
+<ul>
+<li>Application Health - simple application root path poller, based on Number widget and displays additional info based on HTTP response codes.</li>
+<li>Host Health - Monit has standard XML/JSON API for representation of server state, so the widget is a pie based aggregator of the server cluster. Simple red/green semaphore: if all nodes are good, pie is green, in opposite case it’s red. If at least one node is bad, then the pie is gray.</li>
+<li>Application Stats - simple application JSON API data displayed with List Widget. The behaviour of the widget was changed according to red/green principle. Naturally, you can use the variety of Dashing widgets. It up on you. Just look at this <a href="https://github.com/Shopify/dashing/wiki/Additional-Widgets">https://github.com/Shopify/dashing/wiki/Additional-Widgets</a>
+And of course if were you, I would start the dashboards with <a href="https://github.com/gottfrois/dashing-rails">https://github.com/gottfrois/dashing-rails</a>, since mine had created before one released.</li>
+</ul>
+
+<p>How it works you can examine on screencast</p>
+
+<p>About other monitoring approaches, intensification of information perception for making the decision I’ll tell next time.</p>
+
+</main>
+
+  <footer>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-7841501724976419"
+     data-ad-slot="6482387143"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  
+  <hr/>
+  &copy; <a href="https://romanvbabenko.github.io">Roman V. Babenko</a> 2017 | <a href="https://github.com/romanvbabenko">Github</a> | <a href="https://twitter.com/romanvbabenko">Twitter</a> | <a href="https://ua.linkedin.com/in/romanvbabenko">LinkedIn</a>
+  
+  </footer>
+  </body>
+</html>
+

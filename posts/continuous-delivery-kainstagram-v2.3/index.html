@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Continuous Delivery - KAInstagram v2.3 | Attic-o-Techie</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76605011-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-76605011-1');
+</script>
+
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Continuous Delivery - KAInstagram v2.3</span></h1>
+
+<h2 class="date">2015/07/16</h2>
+</div>
+
+<main>
+
+
+<p><br />
+<iframe width="700" height="394" src="https://www.youtube.com/embed/yZeQA9d_4mk" frameborder="0" allowfullscreen></iframe></p>
+
+<p>## What is that?</p>
+
+<p>A self-promotion video featuring an Instagram App project.</p>
+
+<h2 id="project-details">Project details:</h2>
+
+<p>Time spent: 10 days /3-4 hours a day/.</p>
+
+<p>Project includes three parts: API, IOS App, and Virtual Host Machine</p>
+
+<h2 id="kainstagram-api">KAInstagram API</h2>
+
+<h3 id="ruby-rails">Ruby &amp; Rails</h3>
+
+<ul>
+<li>Testing Framework: rspec_api_documentation</li>
+<li>App Server: Puma</li>
+<li>Deploy: capistrano</li>
+<li>KAInstagram-iOS</li>
+</ul>
+
+<h3 id="objective-c">Objective-C</h3>
+
+<ul>
+<li>OS: iOS 8.4 client app tested by Calabash</li>
+<li>Code Bundler: CocoaPods</li>
+<li>Testing Framework: Calabash/Cucumber</li>
+</ul>
+
+<p>### KAInstagram-VM</p>
+
+<ul>
+<li>OS: Ubuntu;</li>
+<li>Web Proxy: Nginx</li>
+<li>Provisioner: Chef</li>
+<li>Server Config: Gusteau</li>
+<li>Ruby Manager: RVM;</li>
+<li>Testing Framework: Nodespec/Serverspec</li>
+</ul>
+
+<blockquote>
+<p>Consistence of whole system can be checked about 15 minutes. Great!</p>
+</blockquote>
+
+<h2 id="why-i-created-this">Why I created this?</h2>
+
+<p>I was looking for a job, and I wanted to show my skills in a user friendly way.</p>
+
+<h2 id="is-the-code-perfect">Is the code perfect?</h2>
+
+<blockquote>
+<p>All declined questions start with ‘it depends on’</p>
+</blockquote>
+
+<p>Perfect code can be achieved through refactoring and as an experienced programmer I can speed up the process. The very first step is to make it work, which is the primary goal of any code. The secondary goal is to write beautiful code that is easy to maintain.</p>
+
+<h2 id="let-me-show-you">Let me show you</h2>
+
+<h3 id="example-1">Example #1</h3>
+
+<p>Full rebuilding of VM took about 10 minutes and at first it satisfied me, and I was happy. After I rebuilt the VM ten times, I got bored, and started thinking about using caching. Constantly downloading the same packages takes too much time and vagrant-cachier plugin helped me speed up the process. What was the result?</p>
+
+<pre><code>before: 8:25 min
+after: 3:38 min
+</code></pre>
+
+<p>That is a 60% improvement! Amazing! Bottleneck was removed. Naturally I could use additional improvements such as incremental rollbacks and interim images, but at that moment rebuilding time satisfied me, so I postponed them.</p>
+
+<h3 id="example-2">Example #2</h3>
+
+<p>Gusteau provisioner included an old version of the Serverspec testing framework. I couldn’t use Guard and new matchers with old version, so I decided to upgrade. If I had decided to stay with old version, I have developed matches on my own and run tests by hand. I upgraded Serverspec.</p>
+
+<p>Thereby I got a new and up-to-date set of matchers and removed manually test runtime losses.</p>
+
+<p>I am not a fan of total upgrading, because logically, if debugging is the process of removing bugs, then coding is a process of creating them. In other words, be careful with your desire to get something new, because you simply don’t know how many drawbacks an upgrade will introduce. The only thing which can help you is testing. I had already tested, so I upgraded.</p>
+
+<h2 id="what-s-the-next">What’s the next?</h2>
+
+<p><strong>Naturally I have a plan!</strong></p>
+
+<ul>
+<li>More tests</li>
+<li>Deploy to Amazon/Linode/Digital Ocean/Whatever</li>
+<li>CI Server/likely Jenkins/ integration</li>
+<li>Code Metrics reports;</li>
+<li>New Functionality and Code Refactoring/I can do that, since I have the tests!</li>
+<li>Single Document Web App/likely BackboneJS/</li>
+</ul>
+
+<p>See Also: KAInstagram, Episode #2, Dashboard</p>
+
+</main>
+
+  <footer>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-7841501724976419"
+     data-ad-slot="6482387143"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  
+  <hr/>
+  &copy; <a href="https://romanvbabenko.github.io">Roman V. Babenko</a> 2017 | <a href="https://github.com/romanvbabenko">Github</a> | <a href="https://twitter.com/romanvbabenko">Twitter</a> | <a href="https://ua.linkedin.com/in/romanvbabenko">LinkedIn</a>
+  
+  </footer>
+  </body>
+</html>
+

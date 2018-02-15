@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dropbox as Remote Git Hosting | Attic-o-Techie</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-76605011-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-76605011-1');
+</script>
+
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Dropbox as Remote Git Hosting</span></h1>
+
+<h2 class="date">2016/04/30</h2>
+</div>
+
+<main>
+
+
+<p>You really do not have to use a lorry to move a sack of cement. Wheelbarrow fits better for this.</p>
+
+<p>Let me show you my git storage evolution:</p>
+
+<ul>
+<li>Github (private reps 12$ per month)</li>
+<li>Gitlab - VPS(Linode, 2GB, 20$ per month)</li>
+<li>Gogs - VPS(Linode, 1GB, 10$ per month) - love it so much, gonna do another post about it</li>
+<li>finally, git-remote-dropbox - free</li>
+</ul>
+
+<p>As you can see I sacrificed features I did not need. My main aim was my own remote git storage: ui, collaborative things, webhooks did not matter at all. If it’s vital for you, then try Redmine, it has all the things I’ve mentioned.</p>
+
+<p><strong>Tips</strong></p>
+
+<p>Note: You do not have installed any desktop Dropbox clients
+It better exclude repo folder from sync with Dropbox
+Never touch reps directly on Dropbox</p>
+
+<p>## Installation</p>
+
+<p>You must have installed Python and Pip</p>
+
+<pre><code>pip install git-remote-dropbox
+</code></pre>
+
+<h2 id="register-app">Register App</h2>
+
+<p>Let’s go to Dropbox app console and register an app.</p>
+
+<p><strong>Tips</strong></p>
+
+<ul>
+<li>Create “App folder” type of app</li>
+<li>Don’t you use the word “dropbox” in the name of your app?</li>
+<li>Development mode is enough for private git storage.</li>
+<li>After you have done that, generate OAuth 2 token and create credentials file in your home directory</li>
+</ul>
+
+<pre><code>~/.git-remote-dropbox.json
+
+{
+    &quot;token&quot;: &quot;xxxxxxxx&quot;
+}
+</code></pre>
+
+<p>Create repository</p>
+
+<p>prepare folder</p>
+
+<pre><code>~% mkdir git-remote-dropbox
+~% cd git-remote-dropbox
+</code></pre>
+
+<p>init repo</p>
+
+<pre><code>~/git-remote-dropbox% vi README.md
+~/git-remote-dropbox% git init
+</code></pre>
+
+<p>commit first changes</p>
+
+<pre><code>~/git-remote-dropbox[master]% git add .
+~/git-remote-dropbox[master]% git ci -m&quot;first commit&quot;
+</code></pre>
+
+<p>push changes to dropbox</p>
+
+<pre><code>~/git-remote-dropbox[master]% git remote add origin dropbox://git/git-remote-dropbox
+~/git-remote-dropbox[master]% git push origin master
+</code></pre>
+
+<p>Now you can login into your Dropbox account and find the repo in /Apps/remote-dbo-x/git/git-remote-dropbox</p>
+
+<h3 id="clone-repository">Clone repository</h3>
+
+<p>git clone dropbox://git/git-remote-dropbox</p>
+
+<p><strong>Tips</strong></p>
+
+<p>Check out your branch after you’ve cloned a repo.
+git checkout master</p>
+
+<p>## Improvements</p>
+
+<p>Let’s add a bit sugar into our candy</p>
+
+<pre><code>function cloneRemoteDropbox() { git clone dropbox://git/$1 &amp;&amp; \
+  cd $1 &amp;&amp; git checkout master }
+function initRemoteDropbox() { mkdir $1 &amp;&amp; cd $1 &amp;&amp; git init &amp;&amp; \
+ git remote add origin dropbox://git/$1 &amp;&amp; \
+ echo &quot;# $1&quot; &gt; README.md &amp;&amp; git add . }
+
+alias git-remote-dx-clone='cloneRemoteDropbox'
+alias git-remote-dx-init='initRemoteDropbox'
+</code></pre>
+
+<p>So now you can do that</p>
+
+<p>clone repo named <code>foo</code></p>
+
+<p><code>git-remote-dx-init foo</code></p>
+
+<p>push <code>foo</code> into Dropbox</p>
+
+<pre><code>git commit -m&quot;first commit&quot;
+git push origin master
+</code></pre>
+
+<p>and clone foo repo at any time at any place</p>
+
+<pre><code>git-remote-dx-clone foo
+</code></pre>
+
+<p>Actually, that’s all.</p>
+
+<h2 id="recap">Recap</h2>
+
+<p>This article is about the way you can pass to understand that what you really need. Sometimes big and complex apps are overhead.</p>
+
+<p>An approach like that lowers your expenses and save your time and efforts. There are a lot of things that need your attention more, than useless features at the moment.</p>
+
+<blockquote>
+<p>YAGNI - You aren’t gonna need it</p>
+</blockquote>
+
+</main>
+
+  <footer>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-7841501724976419"
+     data-ad-slot="6482387143"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  
+  <hr/>
+  &copy; <a href="https://romanvbabenko.github.io">Roman V. Babenko</a> 2017 | <a href="https://github.com/romanvbabenko">Github</a> | <a href="https://twitter.com/romanvbabenko">Twitter</a> | <a href="https://ua.linkedin.com/in/romanvbabenko">LinkedIn</a>
+  
+  </footer>
+  </body>
+</html>
+
